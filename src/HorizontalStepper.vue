@@ -94,6 +94,10 @@ export default {
     reset: {
       type: Boolean,
       default: false
+    },
+    review: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -152,8 +156,10 @@ export default {
           this.$emit("completed-step", this.previousStep);
         }
         
-        if(this.steps[index].completed) {
-          this.canContinue = true;
+        if(this.review) {
+            if(this.steps[index].completed) {
+              this.canContinue = true;
+            }
         }
         
       }
