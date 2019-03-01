@@ -162,6 +162,10 @@ export default {
             }
         }
         
+        if (!this.steps[index].required) {
+          this.canContinue = true;
+        } 
+        
       }
       this.$emit("active-step", this.currentStep);
     },
@@ -176,7 +180,13 @@ export default {
 
         this.activateStep(currentIndex);
       }
-      this.canContinue = false;
+      
+      if (!this.steps[this.currentStep.index].required) {
+          this.canContinue = true;
+      } else {
+          this.canContinue = false;
+      }
+      
       this.$forceUpdate();
     },
 
@@ -186,7 +196,11 @@ export default {
         this.nextStepAction()
       }
 
-      this.canContinue = false;
+      if (!this.steps[this.currentStep.index].required) {
+          this.canContinue = true;
+      } else {
+          this.canContinue = false;
+      }
 
       this.$emit("before-next-step", { currentStep: this.currentStep }, (next = true) => {
         this.canContinue = true;
