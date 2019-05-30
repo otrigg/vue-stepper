@@ -57,8 +57,8 @@
       align-items: center;
       justify-content: space-between;
       &.next {
-        border: 2px solid #3383c8;
-        color: #3383c8;
+        border: 2px solid #d80000;
+        color: #d80000;
         right: 1%;
         &.deactivated {
           border: 2px solid #cccccc !important;
@@ -122,7 +122,7 @@
           padding: 0 1rem;
           background-color: white;
           i {
-            background-color: #3383c8;
+            background-color: #d80000;
             color: #fff;
             border-radius: 100rem;
             padding: 1rem;
@@ -171,7 +171,7 @@
       align-items: center;
       justify-content: space-between;
       &.next {
-        background-color: #3383c8;
+        background-color: #d80000;
         color: white;
         @include shadow(1);
         &.deactivated {
