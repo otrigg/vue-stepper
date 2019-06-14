@@ -42,7 +42,7 @@
                 <span>{{ 'back' | translate(locale) }}</span>
             </div>
             <div :class="['stepper-button next', !canContinue ? 'deactivated' : '']" @click="nextStep()">
-                <span>{{ (finalStep) ? 'finish' : 'next' | translate(locale) }}</span>
+                <span>{{ (finalStep) ? lastButton' : 'Next' }}</span>
                 <i class="material-icons">keyboard_arrow_right</i>
             </div>
         </div>
@@ -63,6 +63,10 @@ export default {
     locale: {
       type: String,
       default: "en"
+    },
+    lastButton: {
+      type: String,
+      default: "Finish"
     },
     topButtons: {
       type: Boolean,
