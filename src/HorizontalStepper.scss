@@ -57,8 +57,8 @@
       align-items: center;
       justify-content: space-between;
       &.next {
-        border: 2px solid #d80000;
-        color: #d80000;
+        border: 2px solid #000;
+        color: #000;
         right: 1%;
         &.deactivated {
           border: 2px solid #cccccc !important;
@@ -123,7 +123,7 @@
           padding: 0 1rem;
           background-color: white;
           i {
-            background-color: #d80000;
+            background-color: #000;
             color: #fff;
             border-radius: 100rem;
             padding: 1rem;
@@ -181,7 +181,7 @@
         }
       }
       &.previous {
-        color: #333333;
+        color: #d80000;
       }
     }
   }
