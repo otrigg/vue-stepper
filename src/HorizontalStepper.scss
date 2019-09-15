@@ -44,7 +44,6 @@
 
 .stepper-box {
   background-color: white;
-  @include shadow(1);
   min-height: 200px;
   .top {
     .stepper-button-top {
