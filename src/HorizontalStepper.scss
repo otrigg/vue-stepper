@@ -167,6 +167,8 @@
     }
     .stepper-button {
       padding: .5rem 1rem;
+      border-radius: 30px;
+      box-shadow: none;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -175,7 +177,6 @@
       &.next {
         background-color: #d80000;
         color: white;
-        @include shadow(1);
         &.deactivated {
           background-color: #cccccc !important;
           cursor: not-allowed !important;
