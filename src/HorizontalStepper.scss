@@ -43,7 +43,7 @@
 }
 
 .stepper-box {
-  background-color: white;
+  background-color: transparent;
   min-height: 200px;
   .top {
     .stepper-button-top {
@@ -120,7 +120,7 @@
         .circle {
           margin-bottom: 1rem;
           padding: 0 1rem;
-          background-color: white;
+          background-color: transparent;
           i {
             background-color: #000;
             color: #fff;
